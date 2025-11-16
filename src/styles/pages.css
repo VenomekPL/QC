@@ -12,3 +12,298 @@
   text-align: center;
   padding: var(--spacing-xl);
 }
+
+/* Wallet Page */
+.wallet-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.wallet-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.portfolio-summary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.page-title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.portfolio-value {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.value-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.value-amount {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+}
+
+.value-change {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.value-change.positive {
+  color: var(--color-success);
+}
+
+.value-change.negative {
+  color: var(--color-error);
+}
+
+.change-period {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  margin-left: var(--spacing-xs);
+}
+
+.performance-card {
+  width: 100%;
+}
+
+.wallet-currencies {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.currencies-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currencies-header h2 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.add-currency-dropdown {
+  max-width: 400px;
+}
+
+.currency-card {
+  width: 100%;
+}
+
+.currency-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: var(--spacing-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.currency-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.currency-name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.currency-balance {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+}
+
+.balance-available,
+.balance-locked,
+.balance-total {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.balance-locked {
+  color: var(--color-text-secondary);
+}
+
+.balance-divider {
+  color: var(--color-border);
+}
+
+.balance-euro {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-left: var(--spacing-sm);
+}
+
+.currency-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.currency-details {
+  padding-top: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.addresses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addresses-header h4 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.addresses-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.no-addresses {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-lg);
+}
+
+.address-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+  background: var(--color-bg-primary);
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  gap: var(--spacing-md);
+}
+
+.address-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1;
+  min-width: 0;
+}
+
+.address-id {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+}
+
+.address-string {
+  font-size: var(--font-size-sm);
+  font-family: monospace;
+  color: var(--color-text-primary);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.address-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.address-balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--spacing-xs);
+  min-width: 120px;
+}
+
+.addr-balance-crypto {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+.addr-balance-euro {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+}
+
+.address-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: center;
+}
+
+/* Responsive Wallet Page */
+@media (max-width: 768px) {
+  .portfolio-value {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .value-amount {
+    font-size: var(--font-size-2xl);
+  }
+
+  .currency-header {
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+
+  .currency-actions {
+    width: 100%;
+  }
+
+  .currency-actions button {
+    flex: 1;
+  }
+
+  .address-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .address-balance {
+    align-items: flex-start;
+  }
+
+  .address-actions {
+    flex-wrap: wrap;
+  }
+
+  .address-actions button {
+    flex: 1;
+    min-width: 80px;
+  }
+}
+
