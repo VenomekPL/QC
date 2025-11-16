@@ -2,14 +2,11 @@ import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout';
 import WalletPage from './pages/WalletPage';
 import TransactionsPage from './pages/TransactionsPage';
+import SettlementPage from './pages/SettlementPage';
 
-// Placeholder page components - will be created in Phase 5-8
+// Placeholder page components - will be created in Phase 6-8
 function LoginPage() {
   return <div className="page-placeholder">Login Page - Coming Soon</div>;
-}
-
-function SettlementPage() {
-  return <div className="page-placeholder">Settlement Page - Coming Soon</div>;
 }
 
 function StakingPage() {
