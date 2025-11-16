@@ -77,7 +77,9 @@ Built as a **demonstration prototype**, this application uses mock data to simul
 ## 🎬 Demo
 
 ### Live Preview
-> *Coming soon: Deployed demo link*
+> **Deployment Status**: ![Azure Static Web Apps CI/CD](https://github.com/VenomekPL/QC/workflows/Azure%20Static%20Web%20Apps%20CI%2FCD/badge.svg)
+> 
+> *Live URL will be available after Azure deployment - see [DEPLOYMENT.md](DEPLOYMENT.md)*
 
 ### Quick Start (Local)
 ```bash
@@ -153,6 +155,17 @@ npm install && npm run dev
 | `npm run build` | Build optimized production bundle |
 | `npm run preview` | Preview production build locally |
 | `npm run lint` | Run ESLint code quality checks |
+
+### Deployment
+
+This project includes automated CI/CD with GitHub Actions for Azure Static Web Apps.
+
+**For deployment instructions**, see [DEPLOYMENT.md](DEPLOYMENT.md)
+
+**Quick Deploy**:
+- Every push to `main` branch automatically deploys to Azure
+- Build and deployment takes 2-3 minutes
+- Azure provides free hosting with global CDN
 
 ---
 
