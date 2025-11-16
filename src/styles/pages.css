@@ -1012,3 +1012,223 @@
   }
 }
 
+/* Staking Page */
+.staking-page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+}
+
+.staking-header {
+  padding: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.locked-value {
+  text-align: center;
+}
+
+.locked-value h2 {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--spacing-sm) 0;
+}
+
+.value-display {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin: var(--spacing-sm) 0;
+}
+
+.value-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.earnings-graph {
+  margin-top: var(--spacing-lg);
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.earnings-graph h3 {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.staking-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.staking-panel {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-sm);
+}
+
+.panel-header h3 {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.apy-badge {
+  background: var(--color-accent);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+}
+
+.panel-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.lock-warning {
+  color: var(--color-warning);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-md);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: rgba(255, 193, 7, 0.1);
+  border-radius: var(--border-radius-sm);
+}
+
+.available-balance {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-md);
+}
+
+.stake-button {
+  margin-top: var(--spacing-md);
+}
+
+.staked-info {
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-md);
+  margin-top: var(--spacing-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-xs) 0;
+}
+
+.info-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.info-value {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+}
+
+.time-remaining {
+  color: var(--color-warning);
+}
+
+.earned-amount {
+  color: var(--color-success);
+}
+
+.unstake-button {
+  margin-top: var(--spacing-md);
+}
+
+.balance-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm);
+  background: var(--color-bg-secondary);
+  border-radius: var(--border-radius-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.estimated-earnings {
+  background: rgba(103, 58, 183, 0.1);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-md);
+  margin-top: var(--spacing-md);
+}
+
+.earnings-label {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.earnings-value {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-accent);
+}
+
+.lock-period-reminder {
+  padding: var(--spacing-sm);
+  background: rgba(255, 193, 7, 0.1);
+  border-left: 3px solid var(--color-warning);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  margin-top: var(--spacing-md);
+}
+
+.error-message {
+  color: var(--color-danger);
+  font-size: var(--font-size-sm);
+  padding: var(--spacing-sm);
+  background: rgba(244, 67, 54, 0.1);
+  border-radius: var(--border-radius-sm);
+  margin-top: var(--spacing-sm);
+}
+
+/* Responsive Staking Page */
+@media (max-width: 768px) {
+  .staking-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-display {
+    font-size: var(--font-size-2xl);
+  }
+
+  .panel-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+}
+
