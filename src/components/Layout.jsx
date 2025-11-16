@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import { NavLink, Outlet, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import '../styles/components.css';
 
-export default function Layout({ user = { name: 'John Trader', role: 'Trader' } }) {
+export default function Layout({ user = { name: 'John Trader', role: 'Trader' }, children }) {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -102,7 +102,7 @@ export default function Layout({ user = { name: 'John Trader', role: 'Trader' } 
       </header>
 
       <main className="layout-main">
-        <Outlet />
+        {children}
       </main>
 
       {menuOpen && (
