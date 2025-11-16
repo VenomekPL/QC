@@ -25,6 +25,11 @@ export const availableStaking = [
 // Current staking positions
 export const stakingPositions = [];
 
+// Get staking positions by currency
+export const getStakingPositionsByCurrency = (currency) => {
+  return stakingPositions.filter(position => position.currency === currency);
+};
+
 // Generate 30-day earnings history (mock data)
 export const generateEarningsHistory = (positions, prices) => {
   const history = [];
