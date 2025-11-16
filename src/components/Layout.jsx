@@ -7,7 +7,10 @@ export default function Layout({ user = { name: 'John Trader', role: 'Trader' } 
   const navigate = useNavigate();
 
   const handleLogout = () => {
-    // Mock logout - in real app would clear auth token
+    // Clear user data from localStorage
+    localStorage.removeItem('qcrypto_user');
+    
+    // Navigate to login page
     navigate('/login');
   };
 

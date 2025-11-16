@@ -5,11 +5,7 @@ import TransactionsPage from './pages/TransactionsPage';
 import SettlementPage from './pages/SettlementPage';
 import AdminPage from './pages/AdminPage';
 import StakingPage from './pages/StakingPage';
-
-// Placeholder page components - will be created in Phase 8
-function LoginPage() {
-  return <div className="page-placeholder">Login Page - Coming Soon</div>;
-}
+import LoginPage from './pages/LoginPage';
 
 export default function App() {
   return (
