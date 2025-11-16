@@ -1,2 +1,14 @@
 /* Page Styles */
 /* Individual page styles will be added here */
+
+/* Placeholder for pages under development */
+.page-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+  text-align: center;
+  padding: var(--spacing-xl);
+}
