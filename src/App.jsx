@@ -3,18 +3,15 @@ import Layout from './components/Layout';
 import WalletPage from './pages/WalletPage';
 import TransactionsPage from './pages/TransactionsPage';
 import SettlementPage from './pages/SettlementPage';
+import AdminPage from './pages/AdminPage';
 
-// Placeholder page components - will be created in Phase 6-8
+// Placeholder page components - will be created in Phase 7-8
 function LoginPage() {
   return <div className="page-placeholder">Login Page - Coming Soon</div>;
 }
 
 function StakingPage() {
   return <div className="page-placeholder">Staking Page - Coming Soon</div>;
-}
-
-function AdminPage() {
-  return <div className="page-placeholder">Admin Panel - Coming Soon</div>;
 }
 
 export default function App() {
